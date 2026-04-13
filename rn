@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ "$#" -ne 2 ]; then
+  echo "Usage: rn <old_name> <new_name>"
+  exit 1
+fi
+
+mv -- "$1" "$2"
